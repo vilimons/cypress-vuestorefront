@@ -1,0 +1,4 @@
+1) criar uma task por funcionalidade - descreve os cenários de cada funcionalidade
+2) criar uma task pra CI
+3) Criar uma task para report
+4) Criar uma task para documentação
