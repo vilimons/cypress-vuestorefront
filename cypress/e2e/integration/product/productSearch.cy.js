@@ -5,7 +5,7 @@ describe('To verify that the product search functionality returns relevant resul
     const product = 'sneaker'
 
     it('should visit the website, type some product on the search box and click on the search button', () => {
-        cy.visit('https://demo.vuestorefront.io/')
+        cy.visit('/')
         cy.get('[data-testid="input-field"]')
           .click()
           .type(product)

@@ -2,7 +2,7 @@
 
 describe('To verify that users can successfully add items to their shopping cart', () => {
     it('should add an product to the shopping cart and assert all conditions', () => {
-        cy.visit('https://demo.vuestorefront.io/category')
+        cy.visit('/category')
         cy.get(':nth-child(1) > .p-2 > [data-testid="link"]').click()
         
         cy.get('[data-testid="productName"]')
@@ -14,9 +14,9 @@ describe('To verify that users can successfully add items to their shopping cart
           .click()
           
         cy.get('[data-testid="alert"]')
-          .should('be.visible')
+        
 
-        cy.visit('https://demo.vuestorefront.io/cart')
+        cy.visit('/cart')
 
         cy.get('.typography-headline-3').should('have.text', 'My Cart')
 

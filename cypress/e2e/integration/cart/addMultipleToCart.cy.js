@@ -2,7 +2,7 @@
 
 describe('To verify that users can add multiple items to their shopping cart', () => {
     it('should add multiple items to the shopping cart', () => {
-        cy.visit('https://demo.vuestorefront.io/product/twin-set-jacket-j2s5ra-black/M0E20000000E925')
+        cy.visit('/product/twin-set-jacket-j2s5ra-black/M0E20000000E925')
         cy.get('[data-testid="addToCartButton"]').click()
 
         cy.get('[data-testid="input"]')

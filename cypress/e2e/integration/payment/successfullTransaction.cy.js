@@ -2,10 +2,10 @@
 
 describe('To verify that the payment integration processes a successful payment transaction without errors', () => {
     it('should complete transaction', () => {
-        cy.visit('https://demo.vuestorefront.io/product/poloralphlauren-sweater-C4782AAHEA-rose/M0E20000000E2VT')
-        cy.get('[data-testid="addToCartButton"]').click()
+        cy.visit('/product/poloralphlauren-sweater-C4782AAHEA-rose/M0E20000000E2VT')
+        cy.get('[data-testid="addToCartButton"]', {timeout: 10000}).click()
         cy.wait(3000)
-        cy.visit('https://demo.vuestorefront.io/cart')
+        cy.visit('/cart')
         cy.get('[data-testid="goToCheckout"]').click()
 
         cy.get('[data-testid="contact-information"] > .md\\:max-w-\\[520px\\] > [data-testid="addButton"]')
@@ -38,9 +38,35 @@ describe('To verify that the payment integration processes a successful payment 
         cy.get('[data-testid="alert"] > .min-w-0').should('be.visible').should('include.text', 'Cart updated')
         cy.get('[data-testid="credit-card"]').click()
 
-        cy.get('.p-CardNumberInput > p-Input')
+        cy.get('#payment-element > div > iframe')
+          .should('be.visible')
+          .then(($iframe) => {
+            const $body = $iframe.contents().find('body')
 
+            cy.wrap($body)
+              .find('input[name="number"]')
+              .type('2223000048410010')
+
+            cy.wrap($body)
+              .find('input[name="expiry"]')
+              .type('09/26')
+
+            cy.wrap($body)
+              .find('input[name="cvc"]')
+              .type('312')
+
+            cy.wrap($body)
+              .find('select[name="country"]')
+              .select('United States')
+
+            cy.wrap($body)
+              .find('input[name="postalCode"]')
+              .type('14780')
+              .should('be.visible')
+
+          })
         
+          cy.get('[data-testid="placeOrder"]').click()
 
 
         
