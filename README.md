@@ -11,7 +11,6 @@ Welcome to the Cypress VueStore Demo Project documentation. This project demonst
 - [Writing Tests](#writing-tests)
 - [Running Tests](#running-tests)
 - [Test Scenarios](#test-scenarios)
-- [Test Reporting](#test-reporting)
 - [Continuous Integration](#continuous-integration)
 
 ## Introduction <a name="introduction"></a>
