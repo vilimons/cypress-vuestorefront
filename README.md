@@ -82,9 +82,6 @@ For comprehensive test examples, explore the cypress/integration/ directory in t
 ## Test Scenarios <a name="test-scenarios"></a>
 All **Test Scenarios** and **Test Cases** was written by me. You can visualize and read them [here](https://github.com/users/vilimons/projects/2/views/2).
 
-## Test Reporting
-Cypress provides detailed test logs, real-time test execution, and captures screenshots and videos for each test run.
-
 ## Continuous Integration
 This project contains CI with Github Actions. You can see the configuration file [here](https://github.com/vilimons/cypress-vuestorefront/blob/main/cypress/.github/workflow/main.yaml).
 <br>
