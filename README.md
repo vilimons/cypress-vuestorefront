@@ -86,4 +86,4 @@ This project contains CI with Github Actions. You can see the configuration file
 <br>
 <br>
 <br>
-### Thank you for checking out the Cypress Vue Storefront Demo Test Project. Feel free to reach out if you have any questions or suggestions!
+### Thank you for checking out my Cypress Vue Storefront Demo Test Project. Feel free to reach out if you have any questions or suggestions!
