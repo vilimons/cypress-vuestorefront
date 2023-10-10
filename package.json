@@ -5,8 +5,9 @@
   },
 
   "scripts": {
-    "npm open": "cypress:open",
-    "npm run": "cypress:run"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   }
+
 }
 
