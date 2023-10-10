@@ -2,5 +2,11 @@
   "devDependencies": {
     "cypress": "^13.2.0",
     "cypress-mochawesome-reporter": "^3.6.0"
+  },
+
+  "scripts": {
+    "npm open": "cypress:open",
+    "npm run": "cypress:run"
   }
 }
+
