@@ -4,8 +4,6 @@ Welcome to the Cypress VueStore Demo Project documentation. This project demonst
 
 ## Table of Contents
 
-- [Cypress Vue Storefront Demo Test Project](#cypress-vue-storefront-demo-test-project)
-  - [Table of Contents](#table-of-contents)
   - [Introduction ](#introduction-)
   - [Prerequisites ](#prerequisites-)
   - [Installation ](#installation-)
@@ -15,9 +13,7 @@ Welcome to the Cypress VueStore Demo Project documentation. This project demonst
   - [Test Examples ](#test-examples-)
   - [Test Scenarios ](#test-scenarios-)
   - [Reports](#reports)
-    - [Example of Verifying Reports](#example-of-verifying-reports)
   - [Continuous Integration](#continuous-integration)
-    - [Thank you for checking out my Cypress Vue Storefront Demo Test Project. Feel free to reach out if you have any questions or suggestions!](#thank-you-for-checking-out-my-cypress-vue-storefront-demo-test-project-feel-free-to-reach-out-if-you-have-any-questions-or-suggestions)
 
 ## Introduction <a name="introduction"></a>
 The **Cypress VueStore Demo Project** showcases how to write automated tests for a Vue.js web application. VueStore is a sample e-commerce website built using Vue.js, and Cypress is utilized to create and run tests that validate its functionality.
