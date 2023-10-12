@@ -50,8 +50,9 @@ The project structure is organized as follows:
 
     ```
     cypress-vuestorefront
+    ├── .github/
+        ├── workflows/
     ├── cypress/
-    │   ├── .github/workflows/
     │   ├── e2e/
     |   |   ├── integration/
     |   |   |   ├── cart
